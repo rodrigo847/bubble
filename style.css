@@ -13,27 +13,17 @@
     
 }
 
-
-
-.audio small,
-.audio2 small {
-    margin: 10px;
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-}
-
 .logo {
     width: 130px;
-    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 30px;
     
 }
 
-/* container*/
+/*======= AUDIO ============*/
 
 .audio-container {
-    
-    
+       
     position: absolute;
     bottom: 0;
     left: 0;
@@ -57,7 +47,14 @@
     margin: 10px;
 }
 
+.audio small {
+    margin: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+}
 
+/*======= NAV BAR ============*/
 
 .navbar {
     width: 85%;
@@ -67,6 +64,8 @@
     align-items: center;
     justify-content: space-between;
 }
+
+/*======= AUDIO ============*/
 
 button {
     
@@ -79,6 +78,12 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background: rgba(0, 0, 0, 0.479);
+    color: white;
+    
+}
+
 .content {
     color: #fbfcfd;
     position: absolute;
@@ -86,6 +91,10 @@ button {
     left: 8%;
     transform: translateY(50%);
     z-index: 2;
+}
+
+p {
+    font-size: 25px;
 }
 
 h1 {
@@ -200,4 +209,33 @@ h1 {
 .bubbles img:nth-child(9) {
     animation-delay: 2.4s;
     width: 75px;
+}
+
+/*========== RESPONSIVO ===============*/
+
+@media (max-width: 376px) {
+    .content {
+        width: 80%;
+    }
+    .content p {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 35px;    
+    }
+    .navbar button {
+        margin-right: 30px;
+    }
+
+    .audio-container {
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .audio {
+        width: 100%;
+        flex-direction: column;
+        margin: 2px;
+    }
+
 }
