@@ -213,7 +213,7 @@ h1 {
 
 /*========== RESPONSIVO ===============*/
 
-@media (max-width: 376px) {
+@media (max-width: 420px) {
     .content {
         width: 80%;
     }
