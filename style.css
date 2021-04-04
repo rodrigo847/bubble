@@ -20,6 +20,8 @@
     
 }
 
+
+
 /*======= AUDIO ============*/
 
 .audio-container {
@@ -86,6 +88,8 @@ button:hover {
     
 }
 
+/*===== CONTEUDO =====*/
+
 .content {
     color: #fbfcfd;
     position: absolute;
@@ -93,10 +97,19 @@ button:hover {
     left: 8%;
     transform: translateY(50%);
     z-index: 2;
+    
+}
+
+.content img {
+    height: 40px;
 }
 
 p {
     font-size: 25px;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 h1 {
@@ -222,13 +235,13 @@ h1 {
     .content p {
         font-size: 25px;
         
-        background-image: linear-gradient(to bottom, rgba(32, 32, 32, 0.178), rgba(151, 151, 243, 0.507));
-        padding: 5px;
+       
+        padding: 2px;
+        border-radius: 20px;
     }
     h1 {
         font-size: 33px;
-        background-image: linear-gradient(to right, rgba(73, 73, 73, 0.513), rgba(184, 184, 183, 0.205) );
-        padding: 5px;
+        padding-left: 15px;
     }
     .navbar button {
         margin-right: 30px;
